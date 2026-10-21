@@ -1,0 +1,43 @@
+print ("=" * 50)
+print (" 😊 PLAY LAB - MISSÃO: TERMINAL MAL-ASSOMBRADO")
+print ("=" * 50)
+()
+print ("Tripulante, um fantasma está assombrando esse terminal.")
+print ("Ele deixou 3 enigmas escondidos no sistema.")
+print ("Sua missão: decifrar as pistas. 0 sistema vai calcular")
+print ("automaticamente se sua resposta bate - mostrando a")
+print ("MARGEN DE ERRO, sem revelar se voce acertou ou errou.")
+print ()
+input ("Pressione ENTER para iniciar o protocolo de acesso...")
+print()
+
+
+print ("=" * 40)
+print ("||    TERMINAL FANTASMA        ||")
+print ("|| PROTOCOLO: COFRE_00X   ||")
+print ("=" * 40)
+print ()
+nome = input ("indentifique-se hacker: ")
+print ()
+print (nome + ", o Fantasma deixou 3 enigmas antes do cofre abrir.")
+print("ENIGIMA 1: 'Sou o dobro de 21, manos a idade que você tinha aos 7 anos mutiplicando por3.'")
+resposta1=int(input("Sua resposta:"))
+alvo1= 42-21
+erro1= resposta1-alvo1
+erro_detectado1=bool(erro1)
+print()
+print("ENIGIMA2: 'Sou a metade da temperatura de ebuluição da água em Celcius, mais a quantidade de patas de uma ranha divididapor2.'")
+resposta2 = float(input("Sua resposta:"))
+alvo2= 50.0 + 4.0
+erro2 = resposta2 - alvo2
+erro_dectado2= bool (erro2)
+pontuacao= 100 - (erro1 * erro1) - (erro2 * erro2 * 100)
+
+print()
+print("="*30)
+print()
+print(" Fim de jogo,", nome)
+print()
+print("|----------------------------------------|")
+print(" |  Pontuação final foi: " , pontuacao, "|")
+print("|----------------------------------------""|")
